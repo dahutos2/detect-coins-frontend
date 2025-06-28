@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Develop Debugモード: 開発用URL
+        {
+            "name": "Run Develop Debug",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug", // debugビルド
+            "program": "lib/main.dart", // アプリのエントリーポイント
+            "args": [
+                "--dart-define-from-file=${workspaceFolder}/lib/config/dev.json"
+            ]
+        },
+        // Develop Profileモード: 開発用URL
+        {
+            "name": "Run Develop Profile",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile", // profileビルド
+            "preLaunchTask": "copy-firebase-dev",
+            "args": [
+                "--dart-define-from-file=${workspaceFolder}/lib/config/dev.json"
+            ]
+        },
+        // Develop Releaseモード: 開発用URL
+        {
+            "name": "Run Develop Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release", // releaseビルド
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define-from-file=${workspaceFolder}/lib/config/dev.json"
+            ]
+        }
+    ]
+}

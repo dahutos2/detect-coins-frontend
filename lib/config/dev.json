@@ -1,0 +1,4 @@
+{
+    "BASE_URL": "http://make-it.local:4000",
+    "APP_MODE": "dev"
+}
