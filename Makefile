@@ -1,5 +1,5 @@
 .PHONY: \
-	run run_std run_prod deploy icon
+	run icon
 
 # flutterをローカルのサーバーに繋がるように実行
 run:
